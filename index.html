@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youssef Eid Said — Junior Backend & Full-Stack Developer. Computer Science student specializing in ASP.NET Core, Node.js, and scalable backend systems." />
+  <meta name="keywords" content="backend developer, full-stack, ASP.NET Core, Node.js, Django, portfolio, Youssef Eid Said" />
+  <meta name="author" content="Youssef Eid Said" />
+  <title>Youssef Eid Said | Backend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NOISE OVERLAY ===================== -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">
+      <span class="logo-bracket">{</span>
+      <span class="logo-name">Youssef Eid</span>
+      <span class="logo-bracket">}</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-label reveal-up">Currently available for work</p>
+      <h1 class="hero-title reveal-up" style="--d:0.1s">
+        <span class="hero-name">Youssef Eid Said</span>
+        <br />
+        <span class="hero-role">Backend<span class="accent">.</span> Full-Stack<span class="accent">.</span> Builder<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--d:0.2s">
+        CS Student building real-world systems — from e-commerce platforms to encryption tools.<br />
+        Clean code. Scalable architecture. Ship it right.
+      </p>
+      <div class="hero-actions reveal-up" style="--d:0.3s">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="bi bi-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-meta reveal-up" style="--d:0.4s">
+        <span><i class="bi bi-geo-alt"></i> El-Maady, Egypt</span>
+        <span><i class="bi bi-mortarboard"></i> CS 2024–2028</span>
+        <span><i class="bi bi-code-slash"></i> Backend-first</span>
+      </div>
+    </div>
+    <div class="hero-terminal reveal-right" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="t-dot t-red"></span>
+        <span class="t-dot t-yellow"></span>
+        <span class="t-dot t-green"></span>
+        <span class="t-title">~/youssef</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-num">01</span>
+        <span class="section-line" aria-hidden="true"></span>
+        <span class="section-tag">about_me.md</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title" id="about-heading">Who I Am</h2>
+          <p>
+            I'm a <strong>hardworking Computer Science student</strong> (2024–2028) with a genuine passion for backend development and building things that work at scale. I don't just write code — I think about architecture, performance, and maintainability from day one.
+          </p>
+          <p>
+            My hands-on experience spans file encryption tools, photo editors, games, and full-stack web applications. Every project teaches me something new, and I approach each one with a problem-solver's mindset.
+          </p>
+          <p>
+            I'm deeply interested in <strong>clean code principles</strong>, <strong>RESTful API design</strong>, and <strong>scalable backend architecture</strong>. Currently expanding my skills in modern frameworks while building projects that simulate real production environments.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="hl-icon"><i class="bi bi-lightning-charge"></i></span>
+              <div>
+                <strong>Fast Learner</strong>
+                <p>Adapt quickly to new technologies and paradigms</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-icon"><i class="bi bi-cpu"></i></span>
+              <div>
+                <strong>Performance-Focused</strong>
+                <p>Every line of code is written with efficiency in mind</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-icon"><i class="bi bi-puzzle"></i></span>
+              <div>
+                <strong>Problem Solver</strong>
+                <p>Analytical thinking applied to real-world challenges</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="card-inner">
+            <div class="card-avatar" aria-hidden="true">
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">YE</span>
+                <div class="avatar-ring"></div>
+              </div>
+            </div>
+            <div class="card-info">
+              <h3>Youssef Eid Said</h3>
+              <p class="card-role">Junior Backend / Full-Stack Dev</p>
+              <div class="card-stats">
+                <div class="stat">
+                  <span class="stat-num">5+</span>
+                  <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">6+</span>
+                  <span class="stat-label">Languages</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">3</span>
+                  <span class="stat-label">Frameworks</span>
+                </div>
+              </div>
+              <a href="mailto:youssefeid8888@gmail.com" class="card-email">
+                <i class="bi bi-envelope"></i> youssefeid8888@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-num">02</span>
+        <span class="section-line" aria-hidden="true"></span>
+        <span class="section-tag">skills.json</span>
+      </div>
+      <h2 class="section-title" id="skills-heading">Technical Stack</h2>
+      <p class="section-sub">Technologies I work with and the stack I build on.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="stag stag-lang">C++</span>
+            <span class="stag stag-lang">Java</span>
+            <span class="stag stag-lang">JavaScript</span>
+            <span class="stag stag-lang">Python</span>
+            <span class="stag stag-lang">SQL</span>
+            <span class="stag stag-lang">C#</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span class="stag stag-back">ASP.NET Core</span>
+            <span class="stag stag-back">MVC</span>
+            <span class="stag stag-back">Web API</span>
+            <span class="stag stag-back">Entity Framework Core</span>
+            <span class="stag stag-back">Node.js</span>
+            <span class="stag stag-back">Express.js</span>
+            <span class="stag stag-back">Django</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-window"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span class="stag stag-front">HTML5</span>
+            <span class="stag stag-front">CSS3</span>
+            <span class="stag stag-front">JavaScript</span>
+            <span class="stag stag-front">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="stag stag-db">MS SQL Server</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-diagram-3"></i> Concepts</h3>
+          <div class="skill-tags">
+            <span class="stag stag-concept">OOP</span>
+            <span class="stag stag-concept">Design Patterns</span>
+            <span class="stag stag-concept">RESTful Architecture</span>
+            <span class="stag stag-concept">MVC Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="bi bi-tools"></i> Tools</h3>
+          <div class="skill-tags">
+            <span class="stag stag-tool">Git</span>
+            <span class="stag stag-tool">GitHub</span>
+            <span class="stag stag-tool">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills Bar -->
+      <div class="soft-skills">
+        <h3 class="soft-title">Soft Skills</h3>
+        <div class="soft-list">
+          <span><i class="bi bi-check2"></i> Problem Solving &amp; Analytical Thinking</span>
+          <span><i class="bi bi-check2"></i> Strong Communication</span>
+          <span><i class="bi bi-check2"></i> Teamwork &amp; Collaboration</span>
+          <span><i class="bi bi-check2"></i> Fast Learner</span>
+          <span><i class="bi bi-check2"></i> Performance-Focused Mindset</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-num">03</span>
+        <span class="section-line" aria-hidden="true"></span>
+        <span class="section-tag">projects/</span>
+      </div>
+      <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+      <p class="section-sub">Real applications built from the ground up.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project Card -->
+        <article class="project-card featured" aria-label="E-Commerce Web Application Project">
+          <div class="project-top">
+            <div class="project-icon"><i class="bi bi-cart4"></i></div>
+            <div class="project-links">
+              <span class="project-badge">Full-Stack</span>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Web Application</h3>
+          <p class="project-sub">Amazon-like Platform</p>
+          <p class="project-desc">
+            Designed and developed a full-stack e-commerce platform using <strong>ASP.NET Core MVC</strong> and <strong>C#</strong>, replicating core Amazon-style functionalities including product listing, shopping workflows, and admin management.
+          </p>
+          <div class="project-features">
+            <div class="feat"><i class="bi bi-check-circle"></i> Product catalog &amp; detail pages</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> Shopping cart &amp; checkout workflow</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> User authentication &amp; authorization</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> Admin product management panel</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> SQL Server CRUD operations</div>
+          </div>
+          <div class="project-tech">
+            <span>ASP.NET Core</span>
+            <span>C#</span>
+            <span>MVC</span>
+            <span>SQL Server</span>
+            <span>EF Core</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-highlights">
+            <div class="ph-item">
+              <i class="bi bi-layers"></i>
+              <span>MVC Architecture</span>
+            </div>
+            <div class="ph-item">
+              <i class="bi bi-database"></i>
+              <span>Relational DB Design</span>
+            </div>
+            <div class="ph-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Auth &amp; Security</span>
+            </div>
+            <div class="ph-item">
+              <i class="bi bi-speedometer2"></i>
+              <span>Performance-Aware</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Project Card -->
+        <article class="project-card featured" aria-label="Booking Suit Application Project">
+          <div class="project-top">
+            <div class="project-icon"><i class="bi bi-cart4"></i></div>
+            <div class="project-links">
+              <span class="project-badge">Full-Stack</span>
+            </div>
+          </div>
+          <h3 class="project-title">Booking Suit Application</h3>
+          <p class="project-sub">Hotel Booking Platform</p>
+          <p class="project-desc">
+            Designed and developed a full-stack booking platform using <strong>ASP.NET Core MVC</strong> and <strong>C#</strong>, enabling users to search, book, and manage hotel stays.
+          </p>
+          <div class="project-features">
+            <div class="feat"><i class="bi bi-check-circle"></i> Display Suits &amp; detail pages</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> Shopping cart &amp; checkout workflow</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> User authentication &amp; authorization</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> Admin product management panel</div>
+            <div class="feat"><i class="bi bi-check-circle"></i> SQL Server CRUD operations</div>
+          </div>
+          <div class="project-tech">
+            <span>Django</span>
+            <span>Python</span>
+            <span>SQL Server</span>
+            <span>Js</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-highlights">
+            
+            <div class="ph-item">
+              <i class="bi bi-database"></i>
+              <span>Relational DB Design</span>
+            </div>
+            <div class="ph-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Auth &amp; Security</span>
+            </div>
+            <div class="ph-item">
+              <i class="bi bi-speedometer2"></i>
+              <span>Performance-Aware</span>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Coming Soon Cards -->
+        <article class="project-card coming-soon" aria-label="More projects coming soon">
+          <div class="cs-inner">
+            <i class="bi bi-plus-lg cs-icon"></i>
+            <p class="cs-text">More Projects</p>
+            <p class="cs-sub">Currently in development</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-num">04</span>
+        <span class="section-line" aria-hidden="true"></span>
+        <span class="section-tag">contact.sh</span>
+      </div>
+      <h2 class="section-title" id="contact-heading">Let's Build Together</h2>
+      <p class="section-sub">Have a project in mind? I'm open to opportunities, collaborations, and new challenges.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="ci-icon"><i class="bi bi-envelope-fill"></i></span>
+            <div>
+              <p class="ci-label">Email</p>
+              <a href="mailto:youssefeid8888@gmail.com" class="ci-value">youssefeid8888@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon"><i class="bi bi-geo-alt-fill"></i></span>
+            <div>
+              <p class="ci-label">Location</p>
+              <p class="ci-value">Giza, Cairo, Egypt</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon"><i class="bi bi-clock-fill"></i></span>
+            <div>
+              <p class="ci-label">Status</p>
+              <p class="ci-value"><span class="status-dot" aria-hidden="true"></span> Available for work</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="mailto:youssefeid8888@gmail.com" class="social-btn" aria-label="Send email">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://github.com/youssefeid8888-prog" class="social-btn" aria-label="GitHub profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/youssef-eid-a931a0351" class="social-btn" aria-label="LinkedIn profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="bi bi-send"></i>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">{</span>
+          <span class="logo-name">Youssef Eid</span>
+          <span class="logo-bracket">}</span>
+        </div>
+        <p class="footer-copy">© 2024 Youssef Eid Said. Built with clean code &amp; passion.</p>
+        <a href="#home" class="back-top" aria-label="Back to top">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
